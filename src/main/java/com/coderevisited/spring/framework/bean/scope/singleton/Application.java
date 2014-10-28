@@ -8,9 +8,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * Demonstration of singleton scope
  */
-public class Application {
-
-    public static void main(String[] args) {
+public class Application
+{
+    public static void main(String[] args)
+    {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("com/coderevisited/spring/framework/bean/scope/singleton/Config.xml");
         Person person1 = ctx.getBean(Person.class);
         person1.setName("Surseh");

@@ -6,15 +6,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ApplicationConfig {
+public class ApplicationConfig
+{
 
     @Bean
-    public Person getPerson() {
+    public Person getPerson()
+    {
         return new Person("Suresh", getAddress());
     }
 
     @Bean
-    public Address getAddress() {
+    public Address getAddress()
+    {
         return new Address("Hyderabad", "India", 500085);
     }
 
